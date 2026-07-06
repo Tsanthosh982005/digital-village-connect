@@ -1,0 +1,35 @@
+Digital Awareness Level (Bar Graph)
+
+Use this graph in PPT:
+
+Digital Awareness Among Villagers
+
+Observed awareness levels after campaign activities.
+
+Category	Percentage
+Students	90
+Youth	85
+Farmers	65
+Homemakers	60
+Elderly	40 
+
+
+
+
+Internet Usage Pattern (Pie Chart)
+
+Use this pie chart in PPT:
+
+Purpose of Internet Usage
+
+Estimated usage pattern observed during village survey.
+
+Purpose	Percentage
+Communication	35
+Education	25
+Entertainment	20
+Social Media	15
+Digital Payments	5
+Key Finding
+
+Most villagers use the internet primarily for communication and educational purposes.
