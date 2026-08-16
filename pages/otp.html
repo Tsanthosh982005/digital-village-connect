@@ -13,6 +13,98 @@
 </head>
 
 <body>
+       <div id="google_translate_element" style="display:none;"></div>
+   <nav>
+
+<div class="logo-container">
+
+<img src="../images/logo.png" alt="Logo" class="site-logo">
+
+<h1>Digital Village Connect</h1>
+
+</div>
+
+<!-- Mobile Menu Button -->
+
+<div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</div>
+
+<ul id="navLinks">
+
+    <li>
+        <a href="../index.html#home">Home</a>
+    </li>
+
+    <li>
+        <a href="../index.html#internet">Internet</a>
+    </li>
+
+    <li>
+        <a href="../index.html#farmers">Farmers</a>
+    </li>
+
+    <li>
+        <a href="../index.html#government">Government</a>
+    </li>
+
+    <li>
+        <a href="../index.html#safety">Safety</a>
+    </li>
+
+    <li>
+        <a href="../index.html#gallery">Gallery</a>
+    </li>
+
+    <li>
+        <a href="../about.html">About</a>
+    </li>
+
+    <li>
+        <a href="../contact.html">Contact</a>
+    </li>
+
+    <!-- Language -->
+
+   <li class="language-menu">
+
+    <a href="javascript:void(0);"
+       class="language-button"
+       onclick="toggleLanguage(event)">
+        🌐 Language
+    </a>
+
+    <div id="languageDropdown" class="language-dropdown">
+
+        <a href="javascript:void(0);"
+           onclick="changeLanguage('en', event)">
+            🇬🇧 English
+        </a>
+
+        <a href="javascript:void(0);"
+           onclick="changeLanguage('te', event)">
+            🇮🇳 తెలుగు
+        </a>
+
+        <a href="javascript:void(0);"
+           onclick="changeLanguage('hi', event)">
+            🇮🇳 हिन्दी
+        </a>
+
+        <a href="javascript:void(0);"
+           onclick="changeLanguage('ta', event)">
+            🇮🇳 தமிழ்
+        </a>
+
+    </div>
+
+</li>
+
+</ul>
+
+<div id="clock" class="clock"></div>
+
+</nav>
 
 <!-- Hero -->
 
@@ -188,7 +280,8 @@ Next →
 </div>
 
 </section>
-<script src="../js/script.js"></script>
+<script src="../js/language.js"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

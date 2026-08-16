@@ -583,3 +583,58 @@ new Chart(document.getElementById("usageChart"), {
         }
     }
 });
+// ==========================
+// GOOGLE TRANSLATE
+// ==========================
+
+function googleTranslateElementInit() {
+
+    new google.translate.TranslateElement(
+        {
+            pageLanguage: 'en',
+            includedLanguages: 'en,te,hi,ta',
+            autoDisplay: false
+        },
+        'google_translate_element'
+    );
+
+}
+// ==========================
+// CHANGE WEBSITE LANGUAGE
+// ==========================
+
+function changeLanguage(lang) {
+
+    const select = document.querySelector(".goog-te-combo");
+
+    if (!select) {
+        alert("Translation is still loading. Please try again.");
+        return;
+    }
+
+    select.value = lang;
+
+    select.dispatchEvent(new Event("change"));
+
+    document.getElementById("languageDropdown").style.display = "none";
+}
+// ==========================
+// LANGUAGE DROPDOWN
+// ==========================
+
+function toggleLanguage(event) {
+
+    event.preventDefault();
+
+    const dropdown = document.getElementById("languageDropdown");
+
+    if (dropdown.style.display === "block") {
+
+        dropdown.style.display = "none";
+
+    } else {
+
+        dropdown.style.display = "block";
+
+    }
+}

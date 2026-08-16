@@ -69,10 +69,24 @@
 </li>
 <li>
     <a href="#" onclick="toggleTheme(event)">🌙</a>
+</li> 
+<li class="language-menu">
+    <a href="#" onclick="toggleLanguage(event)" class="language-button">
+        🌐 Language
+    </a>
+
+    <div id="languageDropdown" class="language-dropdown">
+        <a href="#" onclick="changeLanguage('en')">English</a>
+        <a href="#" onclick="changeLanguage('te')">తెలుగు</a>
+        <a href="#" onclick="changeLanguage('hi')">हिन्दी</a>
+        <a href="#" onclick="changeLanguage('ta')">தமிழ்</a>
+    </div>
 </li>
 </ul>
 <div id="clock" class="clock"></div>
     </nav> 
+    <!-- Google Translate -->
+<div id="google_translate_element"></div>
     <div id="searchBox" class="search-popup">
 
     <input
@@ -466,21 +480,24 @@
 
         <!-- PAN -->
 
-        <div class="gallery-item">
-            <img src="images/3_pan.jpg" alt="PAN Card">
+<div class="gallery-item">
 
-            <h3>📄 PAN Card</h3>
+    <img src="images/3_pan.jpg" alt="PAN Card">
 
-            <p>
-                Apply for a PAN Card, update details and track your application online.
-            </p>
+    <h3>📄 PAN Services</h3>
 
-            <a href="https://www.onlineservices.nsdl.com/"
-               target="_blank"
-               class="service-btn">
-                Visit Website
-            </a>
-        </div>
+    <p>
+        Apply for a new PAN, request a reprint, or update/correct your existing PAN details online.
+    </p>
+
+    <a href="https://www.protean-tinpan.com/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="service-btn">
+        Access PAN Services
+    </a>
+
+</div>
 
         <!-- Voter -->
 
@@ -917,6 +934,7 @@ Developed by <strong>T. Santhosh Kumar</strong>
 </button>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/script.js"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <!-- Welcome Popup -->
 <div id="welcomePopup" class="popup-overlay">
 
